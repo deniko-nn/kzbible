@@ -1,0 +1,14 @@
+[
+  {
+    "from": "/test-stat/",
+    "to": "/articles/test-stat"
+  },
+  {
+    "from": "/novost/",
+    "to": "/news/novost"
+  },
+  {
+    "from": "/product/biblia/",
+    "to": "/books/biblia"
+  }
+]
