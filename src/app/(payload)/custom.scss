@@ -1,0 +1,54 @@
+/* Фирменная палитра админки: песочный #E5CFA3, беж #AF9D80, зелёный #1D493B */
+html,
+html[data-theme='light'] {
+  --color-base-0: #fbf7ee;
+  --color-base-50: #f4edda;
+  --color-base-100: #ece3cc;
+  --color-base-150: #e5cfa3;
+  --color-base-200: #d9c8a4;
+  --color-base-250: #cdbb97;
+  --color-base-300: #c0ae8d;
+  --color-base-350: #af9d80;
+  --color-base-400: #9a8a6f;
+  --color-base-450: #867760;
+  --color-base-500: #726651;
+  --color-base-550: #62584a;
+  --color-base-600: #524a40;
+  --color-base-650: #433e37;
+  --color-base-700: #35362f;
+  --color-base-750: #2b3530;
+  --color-base-800: #1d493b; /* основные кнопки и текст */
+  --color-base-850: #173a2f;
+  --color-base-900: #112d24;
+  --color-base-950: #0d231c;
+  --color-base-1000: #0a1a15;
+  --theme-border-color: #e0d4b6;
+}
+
+/* Ссылки и акценты */
+html a:not([class]) {
+  color: #1d493b;
+}
+
+/* Кнопки: зелёный фон, песочный текст */
+html .btn--style-primary {
+  --bg-color: #1d493b;
+  --color: #e5cfa3;
+  --hover-bg: #256150;
+}
+
+/* Левая панель навигации */
+html .nav {
+  background: #1d493b;
+  --theme-text: #e5cfa3;
+  color: #e5cfa3;
+}
+html .nav a,
+html .nav .nav__link,
+html .nav button {
+  color: #e5cfa3;
+}
+html .nav .nav__link:hover,
+html .nav .nav__link--active {
+  color: #fff;
+}

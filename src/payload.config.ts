@@ -1,6 +1,7 @@
 import { sqliteAdapter } from '@payloadcms/db-sqlite'
 import { seoPlugin } from '@payloadcms/plugin-seo'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import { ru } from '@payloadcms/translations/languages/ru'
 import path from 'path'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
@@ -19,6 +20,8 @@ const dirname = path.dirname(filename)
 
 export default buildConfig({
   admin: {
+    theme: 'light',
+    meta: { titleSuffix: ' — Библейское общество Казахстана' },
     user: Users.slug,
     importMap: {
       baseDir: path.resolve(dirname),
@@ -34,6 +37,7 @@ export default buildConfig({
     client: { url: process.env.DATABASE_URL || 'file:./kzbible.db' },
     prodMigrations: migrations,
   }),
+  i18n: { supportedLanguages: { ru }, fallbackLanguage: 'ru' },
   sharp,
   plugins: [
     seoPlugin({
