@@ -31,6 +31,7 @@ export const slugField = (): Field => ({
 /** Автор записи ставится автоматически — нужен для прав «автор видит только свои». */
 export const createdByField = (): Field => ({
   name: 'createdBy',
+  label: 'Кто создал',
   type: 'relationship',
   relationTo: 'users',
   admin: { position: 'sidebar', readOnly: true },

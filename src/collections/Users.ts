@@ -13,6 +13,7 @@ export const Users: CollectionConfig = {
     update: ({ req: { user }, id }) => hasRole(user as never, 'admin') || user?.id === id,
   },
   fields: [
+    { name: 'email', label: 'Эл. почта', type: 'email', required: true, unique: true },
     { name: 'name', label: 'Имя', type: 'text', required: true },
     {
       name: 'roles',
